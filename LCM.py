@@ -1,13 +1,13 @@
-x,y=map(int,input().split())
+a,b=map(int,input().split())
 lcm=0
-if x>y:
-    greater=x
+if a>b:
+    greater=a
 else:
-    greater=y
+    greater=b
 while True:
-    if (greater%x==0) and (greater %y==0):
+    if (greater%a==0 and greater%b==0):
         lcm=greater
         break
-    greater +=1
+    greater+=1
 print(lcm)
     
